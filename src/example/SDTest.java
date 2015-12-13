@@ -1,4 +1,4 @@
-package exsample;
+package example;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,9 +10,10 @@ import java.io.ObjectOutputStream;
 public class SDTest {
 
 	public static void main(String args[]) throws Exception{
-		
+		//シリアライズ
 		//objectToDisk();
-		diskToObject();
+		//デシリアライズ
+		//diskToObject();
 	}
 	
 	// デシリアライズ
@@ -28,6 +29,8 @@ public class SDTest {
 		} else {
 			System.out.println("予期しないデータ");
 		}
+		
+		inObject.close();
 
 	}
 
